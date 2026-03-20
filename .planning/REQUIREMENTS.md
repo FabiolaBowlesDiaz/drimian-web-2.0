@@ -20,12 +20,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage Sections
 
-- [ ] **HOME-01**: Hero section -- full viewport, provocative headline, CTA to diagnostic, subtle isotipo background
+- [x] **HOME-01**: Hero section -- full viewport, provocative headline, CTA to diagnostic, subtle isotipo background
 - [ ] **HOME-02**: "What is Drimian" section -- 4 lines, sectors, "We Dream With Intelligence"
 - [ ] **HOME-03**: "Skin in the game" model section -- performance-based bonus, automatic exit clause
 - [ ] **HOME-04**: Rotating principle section -- 1 principle from Guia Drimian, monthly rotation, title + 3-4 lines
 - [ ] **HOME-05**: Final CTA section -- "Empecemos a conversar" + WhatsApp + email + address
-- [ ] **HOME-06**: Floating WhatsApp button -- persistent bottom-right, green icon, visible on all pages
+- [x] **HOME-06**: Floating WhatsApp button -- persistent bottom-right, green icon, visible on all pages
 
 ### Diagnostic Experience
 
@@ -119,12 +119,12 @@ Deferred to future release. Tracked but not in current roadmap.
 | FOUN-06 | Phase 1 | Complete |
 | FOUN-07 | Phase 1 | Complete |
 | FOUN-08 | Phase 1 | Complete |
-| HOME-01 | Phase 2 | Pending |
+| HOME-01 | Phase 2 | Complete |
 | HOME-02 | Phase 2 | Pending |
 | HOME-03 | Phase 2 | Pending |
 | HOME-04 | Phase 2 | Pending |
 | HOME-05 | Phase 2 | Pending |
-| HOME-06 | Phase 2 | Pending |
+| HOME-06 | Phase 2 | Complete |
 | DIAG-01 | Phase 3 | Pending |
 | DIAG-02 | Phase 3 | Pending |
 | DIAG-03 | Phase 3 | Pending |

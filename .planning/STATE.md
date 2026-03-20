@@ -2,31 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-20T20:08:25.147Z"
-last_activity: 2026-03-20 -- Completed 01-02 (Layout Components + Demo Page)
+status: in_progress
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-20T23:21:00Z"
+last_activity: 2026-03-20 -- Completed 02-01 (Hero + WhatsApp Foundation)
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
----
-
----
-gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: phase_complete
-stopped_at: Completed 01-02-PLAN.md (Phase 1 complete)
-last_updated: "2026-03-20T17:12:00Z"
-last_activity: 2026-03-20 -- Completed 01-02 (Layout Components + Demo Page)
-progress:
-  total_phases: 5
-  completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
-  percent: 20
+  total_plans: 3
+  completed_plans: 3
+  percent: 30
 ---
 
 # Project State
@@ -36,33 +21,34 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** The interactive diagnostic must work flawlessly -- 10 fullscreen questions with micro-revelations, 7-axis radar, personalized leverage points, all culminating in a WhatsApp CTA with pre-built context.
-**Current focus:** Phase 1 complete. Ready for Phase 2: Homepage
+**Current focus:** Phase 2 in progress. Plan 01 complete (Hero + WhatsApp). Ready for Plan 02.
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation + Design System) -- COMPLETE
-Plan: 2 of 2 in current phase (all plans complete)
-Status: Phase Complete
-Last activity: 2026-03-20 -- Completed 01-02 (Layout Components + Demo Page)
+Phase: 2 of 5 (Homepage)
+Plan: 1 of 2 in current phase
+Status: In Progress
+Last activity: 2026-03-20 -- Completed 02-01 (Hero + WhatsApp Foundation)
 
-Progress: [██░░░░░░░░] 20%
+Progress: [███░░░░░░░] 30%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 21min
-- Total execution time: 0.7 hours
+- Total plans completed: 3
+- Average duration: 17min
+- Total execution time: 0.8 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 2/2 | 42min | 21min |
+| 02-homepage | 1/2 | 8min | 8min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (17min), 01-02 (~25min)
-- Trend: Consistent
+- Last 5 plans: 01-01 (17min), 01-02 (~25min), 02-01 (8min)
+- Trend: Accelerating
 
 *Updated after each plan completion*
 
@@ -83,6 +69,8 @@ Recent decisions affecting current work:
 - 01-02: Nav uses IntersectionObserver with nav-sentinel pattern -- zero JS bundle, inline script only
 - 01-02: Nav background semi-transparent navy (bg-navy/95 + backdrop-blur) for readability over both section themes
 - 01-02: Sentinel div placed in page template, not Nav component
+- 02-01: Logo uses CSS brightness-0 invert filter on dark backgrounds (dark navy logo on transparent)
+- 02-01: Principles use build-time month selection via getCurrentPrinciple() -- rotation on redeploy
 
 ### Pending Todos
 
@@ -95,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-20T20:08:25.113Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-homepage/02-CONTEXT.md
+Last session: 2026-03-20T23:21:00Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: .planning/phases/02-homepage/02-01-SUMMARY.md

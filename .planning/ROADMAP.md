@@ -47,7 +47,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Logo + principles data + Hero section + WhatsApp floating button
+- [x] 02-01-PLAN.md — Logo + principles data + Hero section + WhatsApp floating button
 - [ ] 02-02-PLAN.md — Content sections (Que es Drimian, Modelo, Principio Rotativo, CTA Final) + Nav/Footer update + page assembly
 
 ### Phase 3: Diagnostic Tool
@@ -104,7 +104,7 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
-| 2. Homepage | 0/2 | Not started | - |
+| 2. Homepage | 1/2 | In progress | - |
 | 3. Diagnostic Tool | 0/TBD | Not started | - |
 | 4. Content Pages | 0/TBD | Not started | - |
 | 5. Deployment + Launch | 0/TBD | Not started | - |
