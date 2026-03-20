@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* ===== BRAND DESIGN TOKENS ===== */
+@theme {
+  /* Colors */
+  --color-navy: #131a37;
+  --color-blue: #0143a0;
+  --color-gray: #878787;
+  --color-orange: #FF6600;
+  --color-orange-hover: #ff8533;
+
+  /* Dark theme colors */
+  --color-bg-dark: #0a0a14;
+  --color-bg-section: #0f0f1e;
+  --color-bg-card: #16162a;
+  --color-border-dark: #2a2a40;
+  --color-text-primary: #f0f0f5;
+  --color-text-secondary: #9999aa;
+  --color-text-muted: #666680;
+
+  /* Light theme colors */
+  --color-bg-white: #FFFFFF;
+  --color-bg-light: #F5F5F5;
+  --color-text-dark: #1a1a1a;
+  --color-text-body: #4a4a4a;
+  --color-border-light: #e5e5e5;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Font sizes -- dramatic scale */
+  --text-hero: 4.5rem;     /* 72px */
+  --text-h1: 3.5rem;       /* 56px */
+  --text-h2: 2.5rem;       /* 40px */
+  --text-h3: 1.5rem;       /* 24px */
+  --text-body: 1.0625rem;  /* 17px */
+  --text-small: 0.875rem;  /* 14px */
+
+  /* Spacing -- section gaps */
+  --spacing-section-desktop: 6rem;    /* 96px (within 80-120px range) */
+  --spacing-section-mobile: 3.5rem;   /* 56px (within 48-64px range) */
+
+  /* Border radius -- subtle, not too rounded */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --animate-fade-in: fade-in 0.4s ease;
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* ===== FONT FACES ===== */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/playfair-display-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/playfair-display-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-latin-var.woff2') format('woff2');
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== BASE STYLES ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: 1.7;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  /* Mobile-first typography */
+  h1 {
+    font-size: 2.375rem;   /* 38px mobile */
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.75rem;    /* 28px mobile */
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.25rem;    /* 20px mobile */
+    font-weight: 600;
+  }
+
+  /* Desktop overrides */
+  @media (min-width: 768px) {
+    h1 { font-size: var(--text-h1); }    /* 56px */
+    h2 { font-size: var(--text-h2); }    /* 40px */
+    h3 { font-size: var(--text-h3); }    /* 24px */
+  }
+
+  /* Dark sections (hero, diagnostic) */
+  [data-theme="dark"] {
+    --section-bg: var(--color-bg-dark);
+    --section-text: var(--color-text-primary);
+    --section-text-secondary: var(--color-text-secondary);
+    --section-border: var(--color-border-dark);
+    --section-card-bg: var(--color-bg-card);
+  }
+
+  /* Light sections - white variant */
+  [data-theme="light"] {
+    --section-bg: var(--color-bg-white);
+    --section-text: var(--color-text-dark);
+    --section-text-secondary: var(--color-text-body);
+    --section-border: var(--color-border-light);
+    --section-card-bg: var(--color-bg-white);
+  }
+
+  /* Light sections - gray variant (alternating) */
+  [data-theme="light-alt"] {
+    --section-bg: var(--color-bg-light);
+    --section-text: var(--color-text-dark);
+    --section-text-secondary: var(--color-text-body);
+    --section-border: var(--color-border-light);
+    --section-card-bg: var(--color-bg-white);
+  }
+}
+
+/* ===== HERO HEADLINE ===== */
+.text-hero {
+  font-family: var(--font-heading);
+  font-size: 2.375rem;    /* 38px mobile */
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .text-hero {
+    font-size: var(--text-hero);  /* 72px desktop */
+  }
+}
