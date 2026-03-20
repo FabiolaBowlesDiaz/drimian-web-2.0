@@ -12,7 +12,7 @@ Drimian Web 2.0 delivers a consulting website centered on an interactive prosper
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation + Design System** - Astro project scaffold, brand theme, layout components, hybrid dark/light architecture
+- [x] **Phase 1: Foundation + Design System** - Astro project scaffold, brand theme, layout components, hybrid dark/light architecture
 - [ ] **Phase 2: Homepage** - Hero, sections, floating WhatsApp, complete static homepage experience
 - [ ] **Phase 3: Diagnostic Tool** - 10-question immersive flow, scoring algorithm, radar chart, leverage points, results display, WhatsApp CTA
 - [ ] **Phase 4: Content Pages** - /principios and /resultados pages with shared layout and navigation
@@ -32,8 +32,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Project scaffold + design system tokens (Astro 5, Tailwind v4, fonts, colors, spacing)
-- [ ] 01-02-PLAN.md — Layout components + demo page (Section, Nav, Button, Card, Footer, visual checkpoint)
+- [x] 01-01-PLAN.md — Project scaffold + design system tokens (Astro 5, Tailwind v4, fonts, colors, spacing)
+- [x] 01-02-PLAN.md — Layout components + demo page (Section, Nav, Button, Card, Footer, visual checkpoint)
 
 ### Phase 2: Homepage
 **Goal**: A visitor landing on drimian.com sees a complete, polished homepage with clear value proposition, model explanation, a rotating principle, and multiple pathways to start a conversation via WhatsApp
@@ -103,7 +103,7 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Design System | 0/2 | Not started | - |
+| 1. Foundation + Design System | 2/2 | Complete | 2026-03-20 |
 | 2. Homepage | 0/TBD | Not started | - |
 | 3. Diagnostic Tool | 0/TBD | Not started | - |
 | 4. Content Pages | 0/TBD | Not started | - |

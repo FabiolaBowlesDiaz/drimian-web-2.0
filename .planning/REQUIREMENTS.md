@@ -10,11 +10,11 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Foundation & Design System
 
 - [x] **FOUN-01**: Site uses Astro 5 + Preact + Tailwind CSS 4 as tech stack
-- [ ] **FOUN-02**: Site is mobile-first responsive (375px baseline, scales up to desktop)
-- [ ] **FOUN-03**: Hybrid dark/light theme architecture (dark for hero+diagnostic, light for content sections)
+- [x] **FOUN-02**: Site is mobile-first responsive (375px baseline, scales up to desktop)
+- [x] **FOUN-03**: Hybrid dark/light theme architecture (dark for hero+diagnostic, light for content sections)
 - [x] **FOUN-04**: Brand typography system (serif headlines + sans-serif body + Nexa for logo reference)
 - [x] **FOUN-05**: Brand color system implemented (navy #131a37, blue #0143a0, gray #878787, orange #FF6600)
-- [ ] **FOUN-06**: Base layout components (header, footer, section containers, max-width 680px text)
+- [x] **FOUN-06**: Base layout components (header, footer, section containers, max-width 680px text)
 - [x] **FOUN-07**: Spacing system (80-120px desktop, 48-64px mobile between sections)
 - [x] **FOUN-08**: Total page weight < 1MB (target < 350KB)
 
@@ -112,11 +112,11 @@ Deferred to future release. Tracked but not in current roadmap.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FOUN-01 | Phase 1 | Complete |
-| FOUN-02 | Phase 1 | Pending |
-| FOUN-03 | Phase 1 | Pending |
+| FOUN-02 | Phase 1 | Complete |
+| FOUN-03 | Phase 1 | Complete |
 | FOUN-04 | Phase 1 | Complete |
 | FOUN-05 | Phase 1 | Complete |
-| FOUN-06 | Phase 1 | Pending |
+| FOUN-06 | Phase 1 | Complete |
 | FOUN-07 | Phase 1 | Complete |
 | FOUN-08 | Phase 1 | Complete |
 | HOME-01 | Phase 2 | Pending |
