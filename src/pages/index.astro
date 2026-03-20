@@ -1,110 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
-import Section from '../components/Section.astro';
 import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import WhatIsDrimian from '../components/WhatIsDrimian.astro';
+import SkinInTheGame from '../components/SkinInTheGame.astro';
+import RotatingPrinciple from '../components/RotatingPrinciple.astro';
+import CtaFinal from '../components/CtaFinal.astro';
 import Footer from '../components/Footer.astro';
-import Button from '../components/Button.astro';
-import Card from '../components/Card.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
 ---
-<Base title="Drimian">
-  <!-- Scroll-triggered nav (hidden at top, slides in on scroll) -->
+<Base title="Drimian - Dream with Intelligence">
   <Nav />
-
-  <!-- HERO: Dark section, full viewport -->
-  <Section theme="dark" id="hero" class="min-h-screen flex items-center">
-    <div class="text-center">
-      <h1 class="text-hero mb-6">Dream with Intelligence</h1>
-      <p class="text-[var(--section-text-secondary)] text-lg md:text-xl max-w-lg mx-auto mb-10">
-        Consultoria estrategica basada en decisiones
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button variant="primary" href="#diagnostico">Empezar diagnostico</Button>
-        <Button variant="secondary" href="#demo-light">Conocer mas</Button>
-      </div>
-    </div>
-  </Section>
-
-  <!-- Nav sentinel: triggers nav visibility when scrolled past hero -->
+  <Hero />
   <div id="nav-sentinel" class="h-0 w-0" aria-hidden="true"></div>
-
-  <!-- LIGHT: Typography showcase -->
-  <Section theme="light" id="demo-light">
-    <h2 class="mb-8">Typography Scale</h2>
-    <div class="space-y-6">
-      <div>
-        <p class="text-sm text-[var(--section-text-secondary)] mb-2 uppercase tracking-wider">Hero / 72px desktop / 38px mobile</p>
-        <p class="text-hero">Dream with Intelligence</p>
-      </div>
-      <div>
-        <p class="text-sm text-[var(--section-text-secondary)] mb-2 uppercase tracking-wider">H1 / 56px desktop / 38px mobile</p>
-        <h1>Headline One</h1>
-      </div>
-      <div>
-        <p class="text-sm text-[var(--section-text-secondary)] mb-2 uppercase tracking-wider">H2 / 40px desktop / 28px mobile</p>
-        <h2>Headline Two</h2>
-      </div>
-      <div>
-        <p class="text-sm text-[var(--section-text-secondary)] mb-2 uppercase tracking-wider">H3 / 24px desktop / 20px mobile</p>
-        <h3>Headline Three</h3>
-      </div>
-      <div>
-        <p class="text-sm text-[var(--section-text-secondary)] mb-2 uppercase tracking-wider">Body / 17px</p>
-        <p>Las decisiones correctas producen prosperidad. No se trata de maximizar un numero, sino de crear las condiciones para que una organizacion prospere en los 7 indicadores que importan.</p>
-      </div>
-      <div>
-        <p class="text-sm text-[var(--section-text-secondary)] mb-2 uppercase tracking-wider">Small / 14px</p>
-        <p class="text-sm">Texto secundario y etiquetas en tamano reducido.</p>
-      </div>
-    </div>
-  </Section>
-
-  <!-- LIGHT-ALT: Card showcase -->
-  <Section theme="light-alt" id="demo-cards" wide>
-    <h2 class="mb-8">Card Components</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <Card>
-        <h3 class="mb-3">Diferenciacion Defendible</h3>
-        <p class="text-[var(--section-text-secondary)]">Lo que hace unica a tu organizacion y que los competidores no pueden copiar facilmente.</p>
-      </Card>
-      <Card>
-        <h3 class="mb-3">Resiliencia</h3>
-        <p class="text-[var(--section-text-secondary)]">Capacidad de absorber shocks sin perder la capacidad operativa ni la posicion de mercado.</p>
-      </Card>
-      <Card>
-        <h3 class="mb-3">Opcionalidad</h3>
-        <p class="text-[var(--section-text-secondary)]">Tener caminos alternativos disponibles. Cuantas mas opciones viables, mayor capacidad de adaptacion.</p>
-      </Card>
-    </div>
-  </Section>
-
-  <!-- DARK: Dark theme showcase -->
-  <Section theme="dark" id="demo-dark" wide>
-    <h2 class="mb-4">Dark Theme Section</h2>
-    <p class="text-[var(--section-text-secondary)] mb-8 max-w-[680px]">
-      Las secciones oscuras crean contraste dramatico y enfocan la atencion. Ideales para hero areas, el diagnostico interactivo, y secciones de llamada a la accion.
-    </p>
-    <Card class="mb-8 max-w-md">
-      <h3 class="mb-3">Card on Dark</h3>
-      <p class="text-[var(--section-text-secondary)]">Los cards adaptan automaticamente sus bordes y fondo al tema de la seccion padre.</p>
-    </Card>
-    <div class="flex flex-col sm:flex-row gap-4">
-      <Button variant="primary" href="#diagnostico">Primary Button</Button>
-      <Button variant="secondary">Secondary Button</Button>
-    </div>
-  </Section>
-
-  <!-- LIGHT: Spacing verification -->
-  <Section theme="light" id="demo-spacing">
-    <h2 class="mb-8">Spacing System</h2>
-    <p class="text-[var(--section-text-secondary)] mb-4">
-      Cada seccion usa <code class="bg-bg-light px-2 py-0.5 rounded-sm text-sm">--spacing-section-desktop: 96px</code> en escritorio y
-      <code class="bg-bg-light px-2 py-0.5 rounded-sm text-sm">--spacing-section-mobile: 56px</code> en movil.
-    </p>
-    <p class="text-[var(--section-text-secondary)]">
-      El texto esta limitado a 680px de ancho maximo para legibilidad optima. Las secciones con <code class="bg-bg-light px-2 py-0.5 rounded-sm text-sm">wide</code> prop expanden a 1024px para grids y layouts mas amplios.
-    </p>
-  </Section>
-
-  <!-- Footer -->
+  <WhatIsDrimian />
+  <SkinInTheGame />
+  <RotatingPrinciple />
+  <CtaFinal />
   <Footer />
+  <WhatsAppFloat />
 </Base>

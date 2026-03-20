@@ -3,6 +3,8 @@
 // NOTE: The nav-sentinel element must be placed in the PAGE (not here),
 // right after the hero section. The sentinel triggers the IntersectionObserver
 // that shows/hides this nav bar.
+import { Image } from 'astro:assets';
+import logo from '../assets/images/drimian-logo.png';
 ---
 <nav
   id="main-nav"
@@ -11,7 +13,7 @@
   <div class="max-w-5xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
     <!-- Logo -->
     <a href="/" class="flex items-center">
-      <img src="/images/logo-white.png" alt="Drimian" class="h-8" />
+      <Image src={logo} alt="Drimian" height={32} class="h-8 w-auto brightness-0 invert" />
     </a>
 
     <!-- Desktop links -->
@@ -19,7 +21,7 @@
       <a href="#principios" class="text-sm font-medium text-text-primary hover:text-orange transition-colors duration-200">
         Principios
       </a>
-      <a href="#diagnostico" class="inline-flex items-center bg-orange text-white text-sm font-semibold rounded-md px-6 py-2.5 hover:bg-orange-hover transition-colors duration-200">
+      <a href="#que-es-drimian" class="inline-flex items-center bg-orange text-white text-sm font-semibold rounded-md px-6 py-2.5 hover:bg-orange-hover transition-colors duration-200">
         Empezar diagnostico
       </a>
     </div>
@@ -42,7 +44,7 @@
     <a href="#principios" class="block text-sm font-medium text-text-primary hover:text-orange transition-colors duration-200 py-3">
       Principios
     </a>
-    <a href="#diagnostico" class="inline-flex items-center bg-orange text-white text-sm font-semibold rounded-md px-6 py-2.5 mt-3 hover:bg-orange-hover transition-colors duration-200">
+    <a href="#que-es-drimian" class="inline-flex items-center bg-orange text-white text-sm font-semibold rounded-md px-6 py-2.5 mt-3 hover:bg-orange-hover transition-colors duration-200">
       Empezar diagnostico
     </a>
   </div>
