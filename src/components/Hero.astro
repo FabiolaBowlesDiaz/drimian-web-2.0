@@ -1,0 +1,31 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import { Image } from 'astro:assets';
+import logo from '../assets/images/drimian-logo.png';
+---
+<Section theme="dark" id="hero" class="min-h-[100dvh] flex items-center">
+  <div class="text-center">
+    <Image
+      src={logo}
+      alt="Drimian - Dream with Intelligence"
+      width={320}
+      class="mx-auto mb-10 brightness-0 invert"
+    />
+    <h1 class="text-hero mb-6">
+      ¿Estas construyendo lo que va a hacer prospera a tu empresa?
+    </h1>
+    <p class="text-lg md:text-xl text-[var(--section-text-secondary)] mb-10 max-w-2xl mx-auto">
+      10 preguntas. 3 minutos. Descubri si estas empujando mas fuerte — o cambiando lo que importa.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <Button variant="primary" href="#que-es-drimian">Empezar el diagnostico</Button>
+    </div>
+    <a
+      href="#que-es-drimian"
+      class="inline-block mt-8 text-[var(--section-text-secondary)] hover:text-[var(--section-text)] text-sm transition-colors duration-200"
+    >
+      O segui leyendo ↓
+    </a>
+  </div>
+</Section>
