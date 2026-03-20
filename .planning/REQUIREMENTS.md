@@ -1,7 +1,7 @@
 # Requirements: Drimian Web 2.0
 
 **Defined:** 2026-03-20
-**Core Value:** The interactive diagnostic must work flawlessly — 10 fullscreen questions with micro-revelations, 7-axis radar, personalized leverage points, all culminating in a WhatsApp CTA with pre-built context.
+**Core Value:** The interactive diagnostic must work flawlessly -- 10 fullscreen questions with micro-revelations, 7-axis radar, personalized leverage points, all culminating in a WhatsApp CTA with pre-built context.
 
 ## v1 Requirements
 
@@ -20,12 +20,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage Sections
 
-- [ ] **HOME-01**: Hero section — full viewport, provocative headline, CTA to diagnostic, subtle isotipo background
-- [ ] **HOME-02**: "What is Drimian" section — 4 lines, sectors, "We Dream With Intelligence"
-- [ ] **HOME-03**: "Skin in the game" model section — performance-based bonus, automatic exit clause
-- [ ] **HOME-04**: Rotating principle section — 1 principle from Guia Drimian, monthly rotation, title + 3-4 lines
-- [ ] **HOME-05**: Final CTA section — "Empecemos a conversar" + WhatsApp + email + address
-- [ ] **HOME-06**: Floating WhatsApp button — persistent bottom-right, green icon, visible on all pages
+- [ ] **HOME-01**: Hero section -- full viewport, provocative headline, CTA to diagnostic, subtle isotipo background
+- [ ] **HOME-02**: "What is Drimian" section -- 4 lines, sectors, "We Dream With Intelligence"
+- [ ] **HOME-03**: "Skin in the game" model section -- performance-based bonus, automatic exit clause
+- [ ] **HOME-04**: Rotating principle section -- 1 principle from Guia Drimian, monthly rotation, title + 3-4 lines
+- [ ] **HOME-05**: Final CTA section -- "Empecemos a conversar" + WhatsApp + email + address
+- [ ] **HOME-06**: Floating WhatsApp button -- persistent bottom-right, green icon, visible on all pages
 
 ### Diagnostic Experience
 
@@ -39,11 +39,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Scoring & Results
 
-- [ ] **SCOR-01**: Scoring algorithm — a)=1, b)=2, c)=3, d)=4 per question, total 10-40
-- [ ] **SCOR-02**: Profile classification — Ausentes (10-17), Parciales (18-25), Construccion (26-33), Solidos (34-40)
+- [ ] **SCOR-01**: Scoring algorithm -- a)=1, b)=2, c)=3, d)=4 per question, total 10-40
+- [ ] **SCOR-02**: Profile classification -- Ausentes (10-17), Parciales (18-25), Construccion (26-33), Solidos (34-40)
 - [ ] **SCOR-03**: 7 prosperity indicators calculated as weighted averages (weights: 1.0/0.6/0.3)
 - [ ] **SCOR-04**: Indicator normalization to 0-100%: ((avg - 1) / 3) x 100
-- [ ] **SCOR-05**: Leverage points algorithm — mechanisms scored 1-2, ranked by total weight across all indicators, top 2-3
+- [ ] **SCOR-05**: Leverage points algorithm -- mechanisms scored 1-2, ranked by total weight across all indicators, top 2-3
 - [ ] **SCOR-06**: Scoring module extracted as pure TypeScript with zero DOM dependencies
 - [ ] **SCOR-07**: Unit tests validating scoring against reference implementation fixture data
 
@@ -59,8 +59,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content Pages
 
-- [ ] **CONT-01**: /principios page — 10 principles from Guia Drimian as short articles (title + 3-4 paragraphs)
-- [ ] **CONT-02**: /resultados page — 4 anonymized case studies with industry tag, metrics, and context
+- [ ] **CONT-01**: /principios page -- 10 principles from Guia Drimian as short articles (title + 3-4 paragraphs)
+- [ ] **CONT-02**: /resultados page -- 4 anonymized case studies with industry tag, metrics, and context
 - [ ] **CONT-03**: Each content page shares base layout with consistent navigation
 
 ### SEO & Deployment
@@ -95,13 +95,13 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Feature | Reason |
 |---------|--------|
-| Blog (without content commitment) | Stale blog is worse than no blog — jefe's explicit guidance |
+| Blog (without content commitment) | Stale blog is worse than no blog -- jefe's explicit guidance |
 | Services page with prices | Positions as commodity, competitors can undercut |
 | Client testimonials | Generates suspicion in Bolivia market |
 | Client logos | In Bolivia, clients avoid being seen using consultants |
 | Slider/carousel | Slow loading, poor mobile UX, nobody sees slide 3 |
 | Stock photos | Generic, undermines credibility |
-| Contact form as primary CTA | Low conversion in Bolivia — WhatsApp is primary |
+| Contact form as primary CTA | Low conversion in Bolivia -- WhatsApp is primary |
 | Backend/database | All computation client-side, no server needed |
 | User accounts/login | Diagnostic is anonymous, no user management |
 | CMS | Content changes are infrequent, code-managed is simpler |
@@ -157,10 +157,10 @@ Deferred to future release. Tracked but not in current roadmap.
 | DEPL-06 | Phase 5 | Pending |
 
 **Coverage:**
-- v1 requirements: 36 total
-- Mapped to phases: 36
-- Unmapped: 0 ✓
+- v1 requirements: 44 total
+- Mapped to phases: 44
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-20*
-*Last updated: 2026-03-20 after initial definition*
+*Last updated: 2026-03-20 after roadmap creation*
