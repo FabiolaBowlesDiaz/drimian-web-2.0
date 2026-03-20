@@ -1,0 +1,25 @@
+---
+interface Props {
+  theme: 'dark' | 'light' | 'light-alt';
+  id?: string;
+  class?: string;
+  wide?: boolean;
+}
+
+const { theme, id, class: className, wide = false } = Astro.props;
+---
+<section
+  data-theme={theme}
+  id={id}
+  class:list={[
+    'px-6 md:px-12 py-[var(--spacing-section-mobile)] md:py-[var(--spacing-section-desktop)] bg-[var(--section-bg)] text-[var(--section-text)]',
+    className
+  ]}
+>
+  <div class:list={[
+    'mx-auto',
+    wide ? 'max-w-5xl' : 'max-w-[680px]'
+  ]}>
+    <slot />
+  </div>
+</section>
