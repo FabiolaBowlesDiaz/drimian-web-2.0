@@ -1,0 +1,26 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+
+const whatsappMessage = encodeURIComponent('Hola, vi el diagnostico de Drimian y me gustaria conversar sobre mi empresa.');
+const whatsappUrl = `https://wa.me/59176600056?text=${whatsappMessage}`;
+---
+<Section theme="dark" id="contacto">
+  <div class="text-center">
+    <h2 class="mb-8">Empecemos a conversar.</h2>
+    <p class="text-[var(--section-text-secondary)] mb-10 max-w-2xl mx-auto">
+      Si algo de lo que leiste te hizo pensar distinto sobre tu empresa, hablemos. Sin compromiso. El primer paso es una conversacion.
+    </p>
+    <Button variant="primary" href={whatsappUrl}>
+      Escribinos por WhatsApp
+    </Button>
+    <div class="text-sm text-[var(--section-text-secondary)] mt-8 space-y-2 text-center">
+      <p>
+        <a href="mailto:contacto@drimian.com" class="hover:text-[var(--section-text)] transition-colors duration-200">
+          contacto@drimian.com
+        </a>
+      </p>
+      <p>Santa Cruz, Bolivia &middot; Latinoamerica</p>
+    </div>
+  </div>
+</Section>

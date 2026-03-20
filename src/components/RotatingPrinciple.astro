@@ -1,0 +1,22 @@
+---
+import Section from './Section.astro';
+import { getCurrentPrinciple } from '../data/principles';
+
+const principle = getCurrentPrinciple();
+---
+<Section theme="light" id="principio">
+  <div class="text-center">
+    <p class="text-sm uppercase tracking-wider text-blue font-semibold mb-4">
+      Principio del mes
+    </p>
+    <h2 class="mb-8 italic">
+      &laquo;{principle.title}&raquo;
+    </h2>
+    <p class="text-[var(--section-text-secondary)]">
+      {principle.body}
+    </p>
+    <a href="/principios" class="text-sm text-blue hover:underline mt-6 inline-block">
+      Ver los 10 principios &rsaquo;
+    </a>
+  </div>
+</Section>
