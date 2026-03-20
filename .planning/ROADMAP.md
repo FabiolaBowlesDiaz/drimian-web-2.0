@@ -44,11 +44,11 @@ Plans:
   2. All five homepage sections render in order with correct dark/light theming per section and proper spacing
   3. Floating WhatsApp button is visible on scroll, stays bottom-right, and opens WhatsApp with the correct phone number
   4. Homepage is fully readable and navigable on a 375px mobile screen with no horizontal overflow
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Logo + principles data + Hero section + WhatsApp floating button
+- [ ] 02-02-PLAN.md — Content sections (Que es Drimian, Modelo, Principio Rotativo, CTA Final) + Nav/Footer update + page assembly
 
 ### Phase 3: Diagnostic Tool
 **Goal**: A business owner completes a 10-question diagnostic in an immersive fullscreen experience, sees their prosperity profile with a radar chart and top leverage points, and taps a WhatsApp CTA with their results pre-loaded in the message
@@ -104,7 +104,7 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
-| 2. Homepage | 0/TBD | Not started | - |
+| 2. Homepage | 0/2 | Not started | - |
 | 3. Diagnostic Tool | 0/TBD | Not started | - |
 | 4. Content Pages | 0/TBD | Not started | - |
 | 5. Deployment + Launch | 0/TBD | Not started | - |
