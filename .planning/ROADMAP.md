@@ -29,11 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. A test page renders correctly at 375px mobile and 1440px desktop with proper spacing and max-width constraints
   3. Dark-themed and light-themed sections are visually distinct on the same page, using the brand color palette (navy, blue, gray, orange)
   4. Page weight of the empty shell (layout + fonts + CSS) is under 100KB
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Project scaffold + design system tokens (Astro 5, Tailwind v4, fonts, colors, spacing)
+- [ ] 01-02-PLAN.md — Layout components + demo page (Section, Nav, Button, Card, Footer, visual checkpoint)
 
 ### Phase 2: Homepage
 **Goal**: A visitor landing on drimian.com sees a complete, polished homepage with clear value proposition, model explanation, a rotating principle, and multiple pathways to start a conversation via WhatsApp
@@ -103,7 +103,7 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Design System | 0/TBD | Not started | - |
+| 1. Foundation + Design System | 0/2 | Not started | - |
 | 2. Homepage | 0/TBD | Not started | - |
 | 3. Diagnostic Tool | 0/TBD | Not started | - |
 | 4. Content Pages | 0/TBD | Not started | - |
