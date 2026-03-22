@@ -3,30 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in_progress
-stopped_at: Phase 3 context gathered
-last_updated: "2026-03-22T16:30:54.271Z"
-last_activity: 2026-03-22 -- Completed 02-02 (Content Sections + Homepage Assembly)
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-22T18:44:14Z"
+last_activity: 2026-03-22 -- Completed 03-01 (Scoring Engine + TDD Tests)
 progress:
   total_phases: 5
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
----
-
----
-gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: in_progress
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-03-22T16:10:00Z"
-last_activity: 2026-03-22 -- Completed 02-02 (Content Sections + Homepage Assembly)
-progress:
-  total_phases: 5
-  completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
-  percent: 40
+  total_plans: 7
+  completed_plans: 5
+  percent: 50
 ---
 
 # Project State
@@ -36,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** The interactive diagnostic must work flawlessly -- 10 fullscreen questions with micro-revelations, 7-axis radar, personalized leverage points, all culminating in a WhatsApp CTA with pre-built context.
-**Current focus:** Phase 2 complete. Homepage fully assembled and visually approved. Ready for Phase 3 (Diagnostic Tool).
+**Current focus:** Phase 3 in progress. Scoring engine complete with TDD tests. Next: Preact diagnostic island (03-02).
 
 ## Current Position
 
-Phase: 2 of 5 (Homepage) -- COMPLETE
-Plan: 2 of 2 in current phase (all done)
-Status: Phase 2 Complete
-Last activity: 2026-03-22 -- Completed 02-02 (Content Sections + Homepage Assembly)
+Phase: 3 of 5 (Diagnostic Tool)
+Plan: 1 of 3 in current phase (03-01 complete)
+Status: Phase 3 In Progress
+Last activity: 2026-03-22 -- Completed 03-01 (Scoring Engine + TDD Tests)
 
-Progress: [████░░░░░░] 40%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 23min
-- Total execution time: 1.5 hours
+- Total plans completed: 5
+- Average duration: 21min
+- Total execution time: 1.7 hours
 
 **By Phase:**
 
@@ -60,10 +45,11 @@ Progress: [████░░░░░░] 40%
 |-------|-------|-------|----------|
 | 01-foundation | 2/2 | 42min | 21min |
 | 02-homepage | 2/2 | 53min | 27min |
+| 03-diagnostic-tool | 1/3 | 11min | 11min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (17min), 01-02 (~25min), 02-01 (8min), 02-02 (~45min)
-- Trend: Stable (02-02 longer due to visual checkpoint rounds)
+- Last 5 plans: 01-02 (~25min), 02-01 (8min), 02-02 (~45min), 03-01 (11min)
+- Trend: 03-01 fast (pure data/logic, no UI, no checkpoints)
 
 *Updated after each plan completion*
 
@@ -88,6 +74,9 @@ Recent decisions affecting current work:
 - 02-01: Principles use build-time month selection via getCurrentPrinciple() -- rotation on redeploy
 - 02-02: Hero layout refined to centered vertical alignment after checkpoint review
 - 02-02: Accent characters corrected across all Spanish copy in components
+- 03-01: Mecanica doc has rounding errors in intermediate averages -- tests use exact algorithm output
+- 03-01: node-linker=hoisted in .npmrc required for Vitest 4.x + pnpm + OneDrive
+- 03-01: getBarColor uses Tailwind hex colors, not CSS custom properties
 
 ### Pending Todos
 
@@ -95,11 +84,11 @@ None yet.
 
 ### Blockers/Concerns
 
-- Reference repo algorithm extraction needed before Phase 3 execution (scoring weights, profile boundaries, narrative variants)
+- ~~Reference repo algorithm extraction needed before Phase 3 execution (scoring weights, profile boundaries, narrative variants)~~ RESOLVED: Scoring engine ported in 03-01
 - ~~Font selection (serif headline font) still open -- needs decision during Phase 1~~ RESOLVED: Playfair Display selected
 
 ## Session Continuity
 
-Last session: 2026-03-22T16:30:54.266Z
-Stopped at: Phase 3 context gathered
-Resume file: .planning/phases/03-diagnostic-tool/03-CONTEXT.md
+Last session: 2026-03-22T18:44:14Z
+Stopped at: Completed 03-01-PLAN.md
+Resume file: .planning/phases/03-diagnostic-tool/03-01-SUMMARY.md

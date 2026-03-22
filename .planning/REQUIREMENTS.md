@@ -39,13 +39,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Scoring & Results
 
-- [ ] **SCOR-01**: Scoring algorithm -- a)=1, b)=2, c)=3, d)=4 per question, total 10-40
-- [ ] **SCOR-02**: Profile classification -- Ausentes (10-17), Parciales (18-25), Construccion (26-33), Solidos (34-40)
-- [ ] **SCOR-03**: 7 prosperity indicators calculated as weighted averages (weights: 1.0/0.6/0.3)
-- [ ] **SCOR-04**: Indicator normalization to 0-100%: ((avg - 1) / 3) x 100
-- [ ] **SCOR-05**: Leverage points algorithm -- mechanisms scored 1-2, ranked by total weight across all indicators, top 2-3
-- [ ] **SCOR-06**: Scoring module extracted as pure TypeScript with zero DOM dependencies
-- [ ] **SCOR-07**: Unit tests validating scoring against reference implementation fixture data
+- [x] **SCOR-01**: Scoring algorithm -- a)=1, b)=2, c)=3, d)=4 per question, total 10-40
+- [x] **SCOR-02**: Profile classification -- Ausentes (10-17), Parciales (18-25), Construccion (26-33), Solidos (34-40)
+- [x] **SCOR-03**: 7 prosperity indicators calculated as weighted averages (weights: 1.0/0.6/0.3)
+- [x] **SCOR-04**: Indicator normalization to 0-100%: ((avg - 1) / 3) x 100
+- [x] **SCOR-05**: Leverage points algorithm -- mechanisms scored 1-2, ranked by total weight across all indicators, top 2-3
+- [x] **SCOR-06**: Scoring module extracted as pure TypeScript with zero DOM dependencies
+- [x] **SCOR-07**: Unit tests validating scoring against reference implementation fixture data
 
 ### Results Display
 
@@ -132,13 +132,13 @@ Deferred to future release. Tracked but not in current roadmap.
 | DIAG-05 | Phase 3 | Pending |
 | DIAG-06 | Phase 3 | Pending |
 | DIAG-07 | Phase 3 | Pending |
-| SCOR-01 | Phase 3 | Pending |
-| SCOR-02 | Phase 3 | Pending |
-| SCOR-03 | Phase 3 | Pending |
-| SCOR-04 | Phase 3 | Pending |
-| SCOR-05 | Phase 3 | Pending |
-| SCOR-06 | Phase 3 | Pending |
-| SCOR-07 | Phase 3 | Pending |
+| SCOR-01 | Phase 3 | Complete |
+| SCOR-02 | Phase 3 | Complete |
+| SCOR-03 | Phase 3 | Complete |
+| SCOR-04 | Phase 3 | Complete |
+| SCOR-05 | Phase 3 | Complete |
+| SCOR-06 | Phase 3 | Complete |
+| SCOR-07 | Phase 3 | Complete |
 | RESU-01 | Phase 3 | Pending |
 | RESU-02 | Phase 3 | Pending |
 | RESU-03 | Phase 3 | Pending |

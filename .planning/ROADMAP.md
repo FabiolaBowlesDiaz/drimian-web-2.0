@@ -105,6 +105,6 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
 | 2. Homepage | 2/2 | Complete    | 2026-03-22 |
-| 3. Diagnostic Tool | 0/3 | Not started | - |
+| 3. Diagnostic Tool | 1/3 | In Progress|  |
 | 4. Content Pages | 0/TBD | Not started | - |
 | 5. Deployment + Launch | 0/TBD | Not started | - |
