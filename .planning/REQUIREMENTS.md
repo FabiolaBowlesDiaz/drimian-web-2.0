@@ -49,13 +49,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Results Display
 
-- [ ] **RESU-01**: Profile badge with name, score (X/40), and 2-line description
-- [ ] **RESU-02**: 7-axis radar chart (heptagon SVG) with indicators normalized 0-100%
-- [ ] **RESU-03**: Color-coded indicator bars (red 0-25%, orange 26-50%, yellow 51-75%, green 76-100%)
-- [ ] **RESU-04**: Top 2-3 leverage points with impacted indicators and explanatory text
-- [ ] **RESU-05**: Dynamic narrative selected by profile range + 2 weakest indicators
-- [ ] **RESU-06**: WhatsApp CTA with pre-built message including profile, score, and top leverage points
-- [ ] **RESU-07**: Optional email capture (expandable, post-result, name + company + email)
+- [x] **RESU-01**: Profile badge with name, score (X/40), and 2-line description
+- [x] **RESU-02**: 7-axis radar chart (heptagon SVG) with indicators normalized 0-100%
+- [x] **RESU-03**: Color-coded indicator bars (red 0-25%, orange 26-50%, yellow 51-75%, green 76-100%)
+- [x] **RESU-04**: Top 2-3 leverage points with impacted indicators and explanatory text
+- [x] **RESU-05**: Dynamic narrative selected by profile range + 2 weakest indicators
+- [x] **RESU-06**: WhatsApp CTA with pre-built message including profile, score, and top leverage points
+- [x] **RESU-07**: Optional email capture (expandable, post-result, name + company + email)
 
 ### Content Pages
 
@@ -139,13 +139,13 @@ Deferred to future release. Tracked but not in current roadmap.
 | SCOR-05 | Phase 3 | Complete |
 | SCOR-06 | Phase 3 | Complete |
 | SCOR-07 | Phase 3 | Complete |
-| RESU-01 | Phase 3 | Pending |
-| RESU-02 | Phase 3 | Pending |
-| RESU-03 | Phase 3 | Pending |
-| RESU-04 | Phase 3 | Pending |
-| RESU-05 | Phase 3 | Pending |
-| RESU-06 | Phase 3 | Pending |
-| RESU-07 | Phase 3 | Pending |
+| RESU-01 | Phase 3 | Complete |
+| RESU-02 | Phase 3 | Complete |
+| RESU-03 | Phase 3 | Complete |
+| RESU-04 | Phase 3 | Complete |
+| RESU-05 | Phase 3 | Complete |
+| RESU-06 | Phase 3 | Complete |
+| RESU-07 | Phase 3 | Complete |
 | CONT-01 | Phase 4 | Pending |
 | CONT-02 | Phase 4 | Pending |
 | CONT-03 | Phase 4 | Pending |

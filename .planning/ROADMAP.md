@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation + Design System** - Astro project scaffold, brand theme, layout components, hybrid dark/light architecture
 - [x] **Phase 2: Homepage** - Hero, sections, floating WhatsApp, complete static homepage experience
-- [ ] **Phase 3: Diagnostic Tool** - 10-question immersive flow, scoring algorithm, radar chart, leverage points, results display, WhatsApp CTA
+- [x] **Phase 3: Diagnostic Tool** - 10-question immersive flow, scoring algorithm, radar chart, leverage points, results display, WhatsApp CTA
 - [ ] **Phase 4: Content Pages** - /principios and /resultados pages with shared layout and navigation
 - [ ] **Phase 5: Deployment + Launch** - SEO, sitemap, Cloudflare Pages, custom domain, view transitions, performance audit
 
@@ -65,7 +65,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md — Scoring engine: Vitest setup, TypeScript types, data files, scoring module with TDD (all SCOR requirements)
 - [x] 03-02-PLAN.md — Diagnostic question flow: Preact island overlay, 10 questions, crossfade, micro-revelations, history API, sessionStorage (all DIAG requirements)
-- [ ] 03-03-PLAN.md — Results display: profile badge, narrative, radar chart SVG, indicator bars, leverage points, WhatsApp CTA, email capture (all RESU requirements)
+- [x] 03-03-PLAN.md — Results display: profile badge, narrative, radar chart SVG, indicator bars, leverage points, WhatsApp CTA, email capture (all RESU requirements)
 
 ### Phase 4: Content Pages
 **Goal**: A visitor can navigate to /principios and /resultados to read Drimian's 10 prosperity principles and 4 anonymized case studies, reinforcing credibility and methodology
@@ -105,6 +105,6 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
 | 2. Homepage | 2/2 | Complete    | 2026-03-22 |
-| 3. Diagnostic Tool | 2/3 | In Progress|  |
+| 3. Diagnostic Tool | 3/3 | Complete    | 2026-03-22 |
 | 4. Content Pages | 0/TBD | Not started | - |
 | 5. Deployment + Launch | 0/TBD | Not started | - |
