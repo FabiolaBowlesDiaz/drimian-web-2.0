@@ -22,7 +22,7 @@ import logo from '../assets/images/drimian-logo.png';
         Principios
       </a>
       <a href="#que-es-drimian" class="inline-flex items-center bg-orange text-white text-sm font-semibold rounded-md px-6 py-2.5 hover:bg-orange-hover transition-colors duration-200">
-        Empezar diagnostico
+        Empezar diagnóstico
       </a>
     </div>
 
@@ -30,7 +30,7 @@ import logo from '../assets/images/drimian-logo.png';
     <button
       id="nav-hamburger"
       class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
-      aria-label="Abrir menu"
+      aria-label="Abrir menú"
       aria-expanded="false"
     >
       <span class="block w-6 h-0.5 bg-text-primary transition-all duration-200"></span>
@@ -45,27 +45,48 @@ import logo from '../assets/images/drimian-logo.png';
       Principios
     </a>
     <a href="#que-es-drimian" class="inline-flex items-center bg-orange text-white text-sm font-semibold rounded-md px-6 py-2.5 mt-3 hover:bg-orange-hover transition-colors duration-200">
-      Empezar diagnostico
+      Empezar diagnóstico
     </a>
   </div>
 </nav>
 
 <script>
-  // Scroll-triggered nav: IntersectionObserver watches nav-sentinel placed after hero
+  // Scroll-triggered nav:
+  // - Only shows when user scrolls DOWN past the hero
+  // - Hides when user scrolls back UP into the hero area
   const nav = document.getElementById('main-nav');
   const sentinel = document.getElementById('nav-sentinel');
+
   if (nav && sentinel) {
+    let lastScrollY = 0;
+    let pastHero = false;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!entry.isIntersecting) {
-          nav.classList.remove('-translate-y-full');
-        } else {
+        pastHero = !entry.isIntersecting;
+        // Always hide nav when hero/sentinel is visible
+        if (entry.isIntersecting) {
           nav.classList.add('-translate-y-full');
         }
       },
       { threshold: 0 }
     );
     observer.observe(sentinel);
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      const scrollingDown = currentScrollY > lastScrollY;
+
+      if (pastHero && scrollingDown) {
+        // Scrolling down past hero → show nav
+        nav.classList.remove('-translate-y-full');
+      } else if (!pastHero) {
+        // Back in hero area → always hide
+        nav.classList.add('-translate-y-full');
+      }
+
+      lastScrollY = currentScrollY;
+    }, { passive: true });
   }
 
   // Mobile menu toggle

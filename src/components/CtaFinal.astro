@@ -2,14 +2,14 @@
 import Section from './Section.astro';
 import Button from './Button.astro';
 
-const whatsappMessage = encodeURIComponent('Hola, vi el diagnostico de Drimian y me gustaria conversar sobre mi empresa.');
+const whatsappMessage = encodeURIComponent('Hola, vi el diagnóstico de Drimian y me gustaría conversar sobre mi empresa.');
 const whatsappUrl = `https://wa.me/59176600056?text=${whatsappMessage}`;
 ---
 <Section theme="dark" id="contacto">
   <div class="text-center">
     <h2 class="mb-8">Empecemos a conversar.</h2>
     <p class="text-[var(--section-text-secondary)] mb-10 max-w-2xl mx-auto">
-      Si algo de lo que leiste te hizo pensar distinto sobre tu empresa, hablemos. Sin compromiso. El primer paso es una conversacion.
+      Si algo de lo que leíste te hizo pensar distinto sobre tu empresa, hablemos. Sin compromiso. El primer paso es una conversación.
     </p>
     <Button variant="primary" href={whatsappUrl}>
       Escribinos por WhatsApp
@@ -20,7 +20,7 @@ const whatsappUrl = `https://wa.me/59176600056?text=${whatsappMessage}`;
           contacto@drimian.com
         </a>
       </p>
-      <p>Santa Cruz, Bolivia &middot; Latinoamerica</p>
+      <p>Santa Cruz, Bolivia &middot; Latinoamérica</p>
     </div>
   </div>
 </Section>
