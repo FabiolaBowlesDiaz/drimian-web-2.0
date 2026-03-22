@@ -165,3 +165,21 @@
     font-size: var(--text-hero);  /* 72px desktop */
   }
 }
+
+/* ===== DIAGNOSTIC OVERLAY ===== */
+@keyframes diagnostic-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes diagnostic-fade-out {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-8px); }
+}
+.diagnostic-enter { animation: diagnostic-fade-in 300ms ease forwards; }
+.diagnostic-exit { animation: diagnostic-fade-out 300ms ease forwards; }
+
+/* Hide nav and WhatsApp float when diagnostic is open */
+body[data-diagnostic-open] nav,
+body[data-diagnostic-open] .whatsapp-float {
+  display: none !important;
+}

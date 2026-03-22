@@ -8,6 +8,7 @@ import RotatingPrinciple from '../components/RotatingPrinciple.astro';
 import CtaFinal from '../components/CtaFinal.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import Diagnostic from '../islands/Diagnostic.tsx';
 ---
 <Base title="Drimian - Dream with Intelligence">
   <Nav />
@@ -19,4 +20,5 @@ import WhatsAppFloat from '../components/WhatsAppFloat.astro';
   <CtaFinal />
   <Footer />
   <WhatsAppFloat />
+  <Diagnostic client:idle />
 </Base>
