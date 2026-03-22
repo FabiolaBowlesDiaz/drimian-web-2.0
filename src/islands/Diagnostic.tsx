@@ -59,12 +59,17 @@ export default function Diagnostic() {
   const revelationShownAt = useRef<number>(0);
   const transitionRef = useRef<boolean>(false);
   const questionKeyRef = useRef<number>(0);
+  const prevQuestionRef = useRef<number>(-1);
+  const isRestoringRef = useRef<boolean>(false);
 
   const question = QUESTIONS[currentQuestion];
 
   // --- Open event listener ---
   useEffect(() => {
-    const handleOpen = () => dispatch({ type: 'OPEN' });
+    const handleOpen = () => {
+      prevQuestionRef.current = -1;
+      dispatch({ type: 'OPEN' });
+    };
     document.addEventListener('open-diagnostic', handleOpen);
     return () => document.removeEventListener('open-diagnostic', handleOpen);
   }, []);
@@ -103,6 +108,7 @@ export default function Diagnostic() {
       try {
         const parsed = JSON.parse(saved) as DiagnosticState;
         if (parsed.phase && parsed.phase !== 'idle') {
+          isRestoringRef.current = true;
           dispatch({ type: 'RESTORE', state: parsed });
         }
       } catch {
@@ -111,11 +117,21 @@ export default function Diagnostic() {
     }
   }, []);
 
-  // --- History API ---
+  // --- History API: only pushState when advancing forward ---
   useEffect(() => {
-    if (phase === 'question') {
+    if (phase !== 'question') return;
+    if (isRestoringRef.current) {
+      // After restore from sessionStorage, set initial state without push
+      isRestoringRef.current = false;
+      prevQuestionRef.current = currentQuestion;
+      history.replaceState({ diagnosticQuestion: currentQuestion }, '', window.location.pathname);
+      return;
+    }
+    // Only push if advancing forward (currentQuestion > previous)
+    if (currentQuestion > prevQuestionRef.current) {
       history.pushState({ diagnosticQuestion: currentQuestion }, '', window.location.pathname);
     }
+    prevQuestionRef.current = currentQuestion;
   }, [currentQuestion, phase]);
 
   useEffect(() => {
