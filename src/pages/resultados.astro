@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
+import { caseStudies } from '../data/case-studies';
+---
+<Base title="Resultados - Drimian" description="Resultados reales de intervenciones Drimian. Casos anonimizados en clínica, seguro, construcción y hotelería.">
+  <Nav />
+
+  <!-- Hero header -->
+  <Section theme="dark" class="!pb-12 md:!pb-16">
+    <h1 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-4">
+      Lo que construimos
+    </h1>
+    <p class="text-base md:text-lg text-text-secondary max-w-[620px]">
+      Cada intervención empieza por entender el sistema. Después se construyen los mecanismos que faltan. Estos son resultados reales — sin nombres, sin recetas.
+    </p>
+  </Section>
+
+  <div id="nav-sentinel" class="h-0 w-0" aria-hidden="true"></div>
+
+  <!-- Case studies grid -->
+  <Section theme="light" wide>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      {caseStudies.map((study) => (
+        <Card>
+          <span class="inline-block bg-blue/10 text-blue text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+            {study.industry}
+          </span>
+          <div class="flex flex-wrap gap-x-6 gap-y-3 mb-5">
+            {study.metrics.map((metric) => (
+              <div>
+                <span class="block text-2xl md:text-3xl font-display font-bold text-navy">
+                  {metric.number}
+                </span>
+                <span class="text-xs text-text-muted">
+                  {metric.label}
+                </span>
+              </div>
+            ))}
+          </div>
+          <p class="text-sm md:text-base text-text-muted leading-relaxed">
+            {study.context}
+          </p>
+        </Card>
+      ))}
+    </div>
+  </Section>
+
+  <!-- CTA -->
+  <Section theme="light-alt" class="text-center">
+    <h2 class="font-display text-2xl md:text-3xl font-bold mb-4">
+      ¿Querés saber dónde están las palancas de tu empresa?
+    </h2>
+    <p class="text-base text-text-muted mb-8 max-w-[520px] mx-auto">
+      Empezá con un diagnóstico de 10 preguntas que revela lo que los números solos no dicen.
+    </p>
+    <Button href="/#que-es-drimian">Empezar diagnóstico</Button>
+  </Section>
+
+  <Footer />
+  <WhatsAppFloat />
+</Base>

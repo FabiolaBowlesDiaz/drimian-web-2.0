@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import Section from '../components/Section.astro';
+import Button from '../components/Button.astro';
+import { principles } from '../data/principles';
+---
+<Base title="Principios - Drimian" description="Los 10 principios de prosperidad de la Guía Drimian. Ideas que cambian cómo se toman decisiones en una empresa.">
+  <Nav />
+
+  <!-- Hero header -->
+  <Section theme="dark" class="!pb-12 md:!pb-16">
+    <h1 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-4">
+      Los 10 principios de prosperidad
+    </h1>
+    <p class="text-base md:text-lg text-text-secondary max-w-[580px]">
+      Ideas de la Guía Drimian que cambian cómo se toman decisiones en una empresa.
+    </p>
+  </Section>
+
+  <div id="nav-sentinel" class="h-0 w-0" aria-hidden="true"></div>
+
+  <!-- Principles list -->
+  <Section theme="light">
+    {principles.map((principle, index) => (
+      <article class:list={[
+        'py-10 md:py-12',
+        index < principles.length - 1 ? 'border-b border-[var(--section-border)]' : ''
+      ]}>
+        <span class="text-xs font-semibold uppercase tracking-wider text-text-muted mb-3 block">
+          Principio {principle.id}
+        </span>
+        <h2 class="font-display text-xl md:text-2xl font-bold mb-4">
+          {principle.title}
+        </h2>
+        <p class="text-base md:text-lg text-text-muted max-w-[680px] leading-relaxed">
+          {principle.body}
+        </p>
+      </article>
+    ))}
+  </Section>
+
+  <!-- CTA -->
+  <Section theme="light-alt" class="text-center">
+    <h2 class="font-display text-2xl md:text-3xl font-bold mb-4">
+      ¿Querés medir cómo están estos principios en tu empresa?
+    </h2>
+    <p class="text-base text-text-muted mb-8 max-w-[520px] mx-auto">
+      El diagnóstico Drimian evalúa tu empresa en 7 dimensiones de prosperidad.
+    </p>
+    <Button href="/#que-es-drimian">Empezar diagnóstico</Button>
+  </Section>
+
+  <Footer />
+  <WhatsAppFloat />
+</Base>
