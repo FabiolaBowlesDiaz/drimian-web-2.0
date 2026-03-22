@@ -60,12 +60,12 @@ Plans:
   3. Scoring algorithm produces identical results to the reference implementation for all fixture test cases (profile classification, indicator scores, leverage points)
   4. Results page displays a profile badge, 7-axis radar chart (SVG heptagon), color-coded indicator bars, top 2-3 leverage points with explanations, and a dynamic narrative
   5. WhatsApp CTA opens WhatsApp with a pre-built message containing the user's profile name, score, and top leverage points
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md — Scoring engine: Vitest setup, TypeScript types, data files, scoring module with TDD (all SCOR requirements)
+- [ ] 03-02-PLAN.md — Diagnostic question flow: Preact island overlay, 10 questions, crossfade, micro-revelations, history API, sessionStorage (all DIAG requirements)
+- [ ] 03-03-PLAN.md — Results display: profile badge, narrative, radar chart SVG, indicator bars, leverage points, WhatsApp CTA, email capture (all RESU requirements)
 
 ### Phase 4: Content Pages
 **Goal**: A visitor can navigate to /principios and /resultados to read Drimian's 10 prosperity principles and 4 anonymized case studies, reinforcing credibility and methodology
@@ -105,6 +105,6 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
 | 2. Homepage | 2/2 | Complete    | 2026-03-22 |
-| 3. Diagnostic Tool | 0/TBD | Not started | - |
+| 3. Diagnostic Tool | 0/3 | Not started | - |
 | 4. Content Pages | 0/TBD | Not started | - |
 | 5. Deployment + Launch | 0/TBD | Not started | - |
