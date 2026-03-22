@@ -75,10 +75,10 @@ Plans:
   1. /principios page displays all 10 principles as readable short articles with consistent typography and spacing
   2. /resultados page displays 4 anonymized case studies with industry tags, real metrics, and contextual narratives
   3. Both pages share the base layout (header, footer, navigation) and the floating WhatsApp button from the homepage
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — /principios page (10 principles), /resultados page (4 case studies), Nav update with correct links
 
 ### Phase 5: Deployment + Launch
 **Goal**: The site is live at drimian.com on Cloudflare Pages, discoverable by search engines, with smooth page transitions and fast load times even on Bolivia's variable internet
@@ -106,5 +106,5 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
 | 2. Homepage | 2/2 | Complete    | 2026-03-22 |
 | 3. Diagnostic Tool | 3/3 | Complete    | 2026-03-22 |
-| 4. Content Pages | 0/TBD | Not started | - |
+| 4. Content Pages | 0/1 | Not started | - |
 | 5. Deployment + Launch | 0/TBD | Not started | - |
