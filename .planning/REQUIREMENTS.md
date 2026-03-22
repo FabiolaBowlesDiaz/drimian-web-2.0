@@ -29,13 +29,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Diagnostic Experience
 
-- [ ] **DIAG-01**: 10 fullscreen immersive questions, one at a time, each fills viewport
-- [ ] **DIAG-02**: 4 selectable options per question with visual feedback on selection
-- [ ] **DIAG-03**: Progress bar (subtle, top position, "1/10, 2/10..." format)
-- [ ] **DIAG-04**: Micro-revelation appears after each answer (3-4 sec display, dismissible with tap)
-- [ ] **DIAG-05**: Smooth transitions between questions (not slow, not jarring)
-- [ ] **DIAG-06**: Browser back button navigates to previous question (history API integration)
-- [ ] **DIAG-07**: Diagnostic state persisted in sessionStorage (survives accidental refresh)
+- [x] **DIAG-01**: 10 fullscreen immersive questions, one at a time, each fills viewport
+- [x] **DIAG-02**: 4 selectable options per question with visual feedback on selection
+- [x] **DIAG-03**: Progress bar (subtle, top position, "1/10, 2/10..." format)
+- [x] **DIAG-04**: Micro-revelation appears after each answer (3-4 sec display, dismissible with tap)
+- [x] **DIAG-05**: Smooth transitions between questions (not slow, not jarring)
+- [x] **DIAG-06**: Browser back button navigates to previous question (history API integration)
+- [x] **DIAG-07**: Diagnostic state persisted in sessionStorage (survives accidental refresh)
 
 ### Scoring & Results
 
@@ -125,13 +125,13 @@ Deferred to future release. Tracked but not in current roadmap.
 | HOME-04 | Phase 2 | Complete |
 | HOME-05 | Phase 2 | Complete |
 | HOME-06 | Phase 2 | Complete |
-| DIAG-01 | Phase 3 | Pending |
-| DIAG-02 | Phase 3 | Pending |
-| DIAG-03 | Phase 3 | Pending |
-| DIAG-04 | Phase 3 | Pending |
-| DIAG-05 | Phase 3 | Pending |
-| DIAG-06 | Phase 3 | Pending |
-| DIAG-07 | Phase 3 | Pending |
+| DIAG-01 | Phase 3 | Complete |
+| DIAG-02 | Phase 3 | Complete |
+| DIAG-03 | Phase 3 | Complete |
+| DIAG-04 | Phase 3 | Complete |
+| DIAG-05 | Phase 3 | Complete |
+| DIAG-06 | Phase 3 | Complete |
+| DIAG-07 | Phase 3 | Complete |
 | SCOR-01 | Phase 3 | Complete |
 | SCOR-02 | Phase 3 | Complete |
 | SCOR-03 | Phase 3 | Complete |

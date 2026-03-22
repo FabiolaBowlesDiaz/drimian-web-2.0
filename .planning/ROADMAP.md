@@ -63,8 +63,8 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Scoring engine: Vitest setup, TypeScript types, data files, scoring module with TDD (all SCOR requirements)
-- [ ] 03-02-PLAN.md — Diagnostic question flow: Preact island overlay, 10 questions, crossfade, micro-revelations, history API, sessionStorage (all DIAG requirements)
+- [x] 03-01-PLAN.md — Scoring engine: Vitest setup, TypeScript types, data files, scoring module with TDD (all SCOR requirements)
+- [x] 03-02-PLAN.md — Diagnostic question flow: Preact island overlay, 10 questions, crossfade, micro-revelations, history API, sessionStorage (all DIAG requirements)
 - [ ] 03-03-PLAN.md — Results display: profile badge, narrative, radar chart SVG, indicator bars, leverage points, WhatsApp CTA, email capture (all RESU requirements)
 
 ### Phase 4: Content Pages
@@ -105,6 +105,6 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 |-------|----------------|--------|-----------|
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
 | 2. Homepage | 2/2 | Complete    | 2026-03-22 |
-| 3. Diagnostic Tool | 1/3 | In Progress|  |
+| 3. Diagnostic Tool | 2/3 | In Progress|  |
 | 4. Content Pages | 0/TBD | Not started | - |
 | 5. Deployment + Launch | 0/TBD | Not started | - |

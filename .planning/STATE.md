@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in_progress
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-22T18:44:14Z"
-last_activity: 2026-03-22 -- Completed 03-01 (Scoring Engine + TDD Tests)
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-03-22T21:29:00Z"
+last_activity: 2026-03-22 -- Completed 03-02 (Diagnostic Question Flow)
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 7
-  completed_plans: 5
-  percent: 50
+  completed_plans: 6
+  percent: 86
 ---
 
 # Project State
@@ -21,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** The interactive diagnostic must work flawlessly -- 10 fullscreen questions with micro-revelations, 7-axis radar, personalized leverage points, all culminating in a WhatsApp CTA with pre-built context.
-**Current focus:** Phase 3 in progress. Scoring engine complete with TDD tests. Next: Preact diagnostic island (03-02).
+**Current focus:** Phase 3 in progress. Scoring engine and question flow complete. Next: Results display (03-03).
 
 ## Current Position
 
 Phase: 3 of 5 (Diagnostic Tool)
-Plan: 1 of 3 in current phase (03-01 complete)
+Plan: 2 of 3 in current phase (03-01, 03-02 complete)
 Status: Phase 3 In Progress
-Last activity: 2026-03-22 -- Completed 03-01 (Scoring Engine + TDD Tests)
+Last activity: 2026-03-22 -- Completed 03-02 (Diagnostic Question Flow)
 
-Progress: [█████░░░░░] 50%
+Progress: [█████████░] 86%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: 21min
-- Total execution time: 1.7 hours
+- Total plans completed: 6
+- Average duration: 22min
+- Total execution time: 2.1 hours
 
 **By Phase:**
 
@@ -45,11 +45,11 @@ Progress: [█████░░░░░] 50%
 |-------|-------|-------|----------|
 | 01-foundation | 2/2 | 42min | 21min |
 | 02-homepage | 2/2 | 53min | 27min |
-| 03-diagnostic-tool | 1/3 | 11min | 11min |
+| 03-diagnostic-tool | 2/3 | 36min | 18min |
 
 **Recent Trend:**
-- Last 5 plans: 01-02 (~25min), 02-01 (8min), 02-02 (~45min), 03-01 (11min)
-- Trend: 03-01 fast (pure data/logic, no UI, no checkpoints)
+- Last 5 plans: 02-01 (8min), 02-02 (~45min), 03-01 (11min), 03-02 (~25min)
+- Trend: 03-02 moderate (UI island + checkpoint verification)
 
 *Updated after each plan completion*
 
@@ -77,6 +77,11 @@ Recent decisions affecting current work:
 - 03-01: Mecanica doc has rounding errors in intermediate averages -- tests use exact algorithm output
 - 03-01: node-linker=hoisted in .npmrc required for Vitest 4.x + pnpm + OneDrive
 - 03-01: getBarColor uses Tailwind hex colors, not CSS custom properties
+- 03-02: Crossfade uses CSS class toggle with setTimeout, not Preact transition library
+- 03-02: Revelation 2s minimum via timestamp comparison on tap
+- 03-02: Nav/WhatsApp hidden via body[data-diagnostic-open] CSS attribute
+- 03-02: History pushState only on forward navigation
+- 03-02: sessionStorage restores on mount only (fresh start on CTA click)
 
 ### Pending Todos
 
@@ -89,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-22T18:44:14Z
-Stopped at: Completed 03-01-PLAN.md
-Resume file: .planning/phases/03-diagnostic-tool/03-01-SUMMARY.md
+Last session: 2026-03-22T21:29:00Z
+Stopped at: Completed 03-02-PLAN.md
+Resume file: .planning/phases/03-diagnostic-tool/03-02-SUMMARY.md
