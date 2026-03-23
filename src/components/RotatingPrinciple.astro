@@ -3,6 +3,7 @@ import Section from './Section.astro';
 import { getCurrentPrinciple } from '../data/principles';
 
 const principle = getCurrentPrinciple();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <Section theme="light" id="principio">
   <div class="text-center">
@@ -15,7 +16,7 @@ const principle = getCurrentPrinciple();
     <p class="text-[var(--section-text-secondary)]">
       {principle.body}
     </p>
-    <a href="/principios" class="text-sm text-blue hover:underline mt-6 inline-block">
+    <a href={`${base}/principios`} class="text-sm text-blue hover:underline mt-6 inline-block">
       Ver los 10 principios &rsaquo;
     </a>
   </div>
