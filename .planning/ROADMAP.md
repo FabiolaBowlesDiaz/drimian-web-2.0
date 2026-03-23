@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation + Design System** - Astro project scaffold, brand theme, layout components, hybrid dark/light architecture
 - [x] **Phase 2: Homepage** - Hero, sections, floating WhatsApp, complete static homepage experience
 - [x] **Phase 3: Diagnostic Tool** - 10-question immersive flow, scoring algorithm, radar chart, leverage points, results display, WhatsApp CTA
-- [ ] **Phase 4: Content Pages** - /principios and /resultados pages with shared layout and navigation
+- [x] **Phase 4: Content Pages** - /principios and /resultados pages with shared layout and navigation (completed 2026-03-23)
 - [ ] **Phase 5: Deployment + Launch** - SEO, sitemap, Cloudflare Pages, custom domain, view transitions, performance audit
 
 ## Phase Details
@@ -106,5 +106,5 @@ Note: Phase 4 depends only on Phase 1, so it could execute in parallel with Phas
 | 1. Foundation + Design System | 2/2 | Complete    | 2026-03-20 |
 | 2. Homepage | 2/2 | Complete    | 2026-03-22 |
 | 3. Diagnostic Tool | 3/3 | Complete    | 2026-03-22 |
-| 4. Content Pages | 0/1 | Not started | - |
+| 4. Content Pages | 1/1 | Complete   | 2026-03-23 |
 | 5. Deployment + Launch | 0/TBD | Not started | - |

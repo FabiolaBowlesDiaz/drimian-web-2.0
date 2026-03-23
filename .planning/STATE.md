@@ -3,29 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in_progress
-stopped_at: Phase 4 context gathered
-last_updated: "2026-03-22T23:51:52.400Z"
-last_activity: 2026-03-22 -- Completed 03-03 (Results Display)
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-23T00:01:26Z"
+last_activity: 2026-03-22 -- Completed 04-01 (Content Pages)
 progress:
   total_phases: 5
-  completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
----
-
----
-gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: in_progress
-stopped_at: Completed 03-03-PLAN.md
-last_updated: "2026-03-22T21:56:46Z"
-last_activity: 2026-03-22 -- Completed 03-03 (Results Display)
-progress:
-  total_phases: 5
-  completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
+  completed_phases: 4
+  total_plans: 8
+  completed_plans: 8
   percent: 100
 ---
 
@@ -36,22 +21,22 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** The interactive diagnostic must work flawlessly -- 10 fullscreen questions with micro-revelations, 7-axis radar, personalized leverage points, all culminating in a WhatsApp CTA with pre-built context.
-**Current focus:** Phase 3 complete. Full diagnostic experience (scoring, question flow, results display) delivered. Next: Phase 4 (Content Pages) or Phase 5 (Deployment).
+**Current focus:** Phase 4 complete. Content pages (/principios, /resultados) delivered. Next: Phase 5 (Deployment).
 
 ## Current Position
 
-Phase: 3 of 5 (Diagnostic Tool) -- COMPLETE
-Plan: 3 of 3 in current phase (03-01, 03-02, 03-03 complete)
-Status: Phase 3 Complete
-Last activity: 2026-03-22 -- Completed 03-03 (Results Display)
+Phase: 4 of 5 (Content Pages) -- COMPLETE
+Plan: 1 of 1 in current phase (04-01 complete)
+Status: Phase 4 Complete
+Last activity: 2026-03-22 -- Completed 04-01 (Content Pages)
 
 Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 20min
+- Total plans completed: 8
+- Average duration: 18min
 - Total execution time: 2.2 hours
 
 **By Phase:**
@@ -61,10 +46,11 @@ Progress: [██████████] 100%
 | 01-foundation | 2/2 | 42min | 21min |
 | 02-homepage | 2/2 | 53min | 27min |
 | 03-diagnostic-tool | 3/3 | 44min | 15min |
+| 04-content-pages | 1/1 | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (~45min), 03-01 (11min), 03-02 (~25min), 03-03 (~8min)
-- Trend: 03-03 fast (continuation after checkpoint, results display already built)
+- Last 5 plans: 03-01 (11min), 03-02 (~25min), 03-03 (~8min), 04-01 (2min)
+- Trend: 04-01 very fast (straightforward content pages, no complex logic)
 
 *Updated after each plan completion*
 
@@ -100,6 +86,9 @@ Recent decisions affecting current work:
 - 03-03: RadarChart uses CSS transition on SVG polygon points for expand-from-center animation
 - 03-03: Email capture uses mailto: approach (no backend) with diagnostic context
 - 03-03: Both implementation tasks committed in single commit (continuous implementation flow)
+- 04-01: Content pages follow dark-hero + light-body + light-alt-CTA section pattern
+- 04-01: Case study metrics use font-display (Playfair) for visual hierarchy in cards
+- 04-01: CTA sections link back to /#que-es-drimian (no diagnostic duplication on content pages)
 
 ### Pending Todos
 
@@ -112,6 +101,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-22T23:51:52.388Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-content-pages/04-CONTEXT.md
+Last session: 2026-03-23T00:01:00Z
+Stopped at: Completed 04-01-PLAN.md
+Resume file: .planning/phases/04-content-pages/04-01-SUMMARY.md

@@ -59,9 +59,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content Pages
 
-- [ ] **CONT-01**: /principios page -- 10 principles from Guia Drimian as short articles (title + 3-4 paragraphs)
-- [ ] **CONT-02**: /resultados page -- 4 anonymized case studies with industry tag, metrics, and context
-- [ ] **CONT-03**: Each content page shares base layout with consistent navigation
+- [x] **CONT-01**: /principios page -- 10 principles from Guia Drimian as short articles (title + 3-4 paragraphs)
+- [x] **CONT-02**: /resultados page -- 4 anonymized case studies with industry tag, metrics, and context
+- [x] **CONT-03**: Each content page shares base layout with consistent navigation
 
 ### SEO & Deployment
 
@@ -146,9 +146,9 @@ Deferred to future release. Tracked but not in current roadmap.
 | RESU-05 | Phase 3 | Complete |
 | RESU-06 | Phase 3 | Complete |
 | RESU-07 | Phase 3 | Complete |
-| CONT-01 | Phase 4 | Pending |
-| CONT-02 | Phase 4 | Pending |
-| CONT-03 | Phase 4 | Pending |
+| CONT-01 | Phase 4 | Complete |
+| CONT-02 | Phase 4 | Complete |
+| CONT-03 | Phase 4 | Complete |
 | DEPL-01 | Phase 5 | Pending |
 | DEPL-02 | Phase 5 | Pending |
 | DEPL-03 | Phase 5 | Pending |
