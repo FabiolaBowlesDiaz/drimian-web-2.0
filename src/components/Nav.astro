@@ -1,15 +1,21 @@
 ---
 // Nav component: scroll-triggered navigation
-// NOTE: The nav-sentinel element must be placed in the PAGE (not here),
-// right after the hero section. The sentinel triggers the IntersectionObserver
-// that shows/hides this nav bar.
+// On homepage: hidden until scroll down past hero (requires nav-sentinel in page)
+// On content pages: always visible (pass alwaysVisible={true})
+interface Props {
+  alwaysVisible?: boolean;
+}
 import { Image } from 'astro:assets';
 import logo from '../assets/images/drimian-logo.png';
+const { alwaysVisible = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <nav
   id="main-nav"
-  class="fixed top-0 left-0 right-0 z-50 -translate-y-full transition-transform duration-300 bg-navy/95 backdrop-blur-sm"
+  class:list={[
+    "fixed top-0 left-0 right-0 z-50 transition-transform duration-300 bg-navy/95 backdrop-blur-sm",
+    alwaysVisible ? "" : "-translate-y-full"
+  ]}
 >
   <div class="max-w-5xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
     <!-- Logo -->
